@@ -1,11 +1,11 @@
 import { shallowMount } from '@vue/test-utils'
 import { expect, it } from 'vitest'
-import BaseButton from '../../src/components/BaseButton.vue'
+import BaseButton, { typeClasses } from '../../src/components/BaseButton.vue'
 import { ButtonType } from '../../src/types'
 
 it("renders 'primary' button by default", () => {
   const label = 'Label'
-  const primaryButtonClasses = 'bg-purple-500 enabled:hover:bg-purple-600 text-white'
+  const primaryButtonClasses = typeClasses[ButtonType.PRIMARY]
 
   const wrapper = shallowMount(BaseButton, {
     slots: { default: label }

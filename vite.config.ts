@@ -11,6 +11,7 @@ export default defineConfig({
     }
   },
   test: {
+    // globals: true,
     environmentMatchGlobs: [['test/components/**', 'happy-dom']]
   }
 })

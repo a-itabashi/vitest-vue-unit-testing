@@ -1,7 +1,7 @@
 <script lang="ts">
 import { ButtonType } from '../types'
 
-const typeClasses: Record<ButtonType, string> = {
+export const typeClasses: Record<ButtonType, string> = {
   [ButtonType.PRIMARY]: 'bg-purple-500 enabled:hover:bg-purple-600 text-white',
   [ButtonType.SUCCESS]: 'bg-green-500 enabled:hover:bg-green-600 text-white',
   [ButtonType.WARNING]: 'bg-yellow-500 enabled:hover:bg-yellow-600 text-white',
