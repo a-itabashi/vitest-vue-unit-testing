@@ -19,6 +19,7 @@ function mountActivityItem(activityOverrides: Partial<Activity> = {}) {
   })
 }
 
+// TypeScriptでのPartial型は、ある型のすべてのプロパティをオプショナル（任意の値）にするユーティリティ型
 function createActivity(overrides: Partial<Activity> = {}) {
   return {
     id: '',

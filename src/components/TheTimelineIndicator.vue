@@ -12,6 +12,10 @@ const topOffset = computed(
 function getTimelineHeight(): number {
   return indicatorRef.value?.parentElement?.getBoundingClientRect().height ?? 0
 }
+
+defineExpose({
+  topOffset
+})
 </script>
 
 <template>

@@ -35,7 +35,7 @@ it('renders select with reset button', () => {
 it('renders select with placeholder', () => {
   const placeholder = 'Placeholder'
 
-  console.log(shallowMountSelect({ placeholder }).html())
+  // console.log(shallowMountSelect({ placeholder }).html())
 
   expect(shallowMountSelect({ placeholder }).text()).toContain(placeholder)
 })
